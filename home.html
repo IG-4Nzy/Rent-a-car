@@ -1,0 +1,487 @@
+<html>
+    <head>
+        <title>RentACar</title>
+        <link rel="icon" href="carICOo.ico" type="image/x-icon"> 
+        <style>
+            body{
+                max-height: 100vh;
+            }
+            .nav{
+                background-color: rgb(31, 31, 31);
+            }
+            .ul{
+                display: flex;
+                margin-left: 900px;
+            }
+            li{
+                padding: 20px;
+            }
+            li a{
+                text-decoration: none;
+                color: white;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .li:hover{
+                color: rgb(0, 255, 98);
+            }
+            .image{
+                background-image: url('rd.jpg');
+                width: 2000px;
+                height: 400px;
+                filter: brightness(50%);
+                filter: contrast(-50%);
+            }
+            .rnt,.des{
+                color: rgb(255, 255, 255);
+            }
+            .rnt{
+                font-weight: bold;
+                font-size: 40px;
+                color: white;
+                
+            }
+            .qnmrk{
+                position: relative;
+                bottom: 500px;
+            }
+            .line{
+                position: relative;
+                z-index: 2;
+                bottom: 500px;
+            }
+            .d1,.d2,.d3{
+                width: 1160px;
+                height: 50px;
+                background-color: rgb(255, 225, 185);
+                border-radius: 8px;
+                box-shadow: 0px 1px 0px;
+
+            }
+            .d1 p,.d2 p,.d3 p{
+                position: relative;
+                left: 25px;
+                top: 15px;
+            }
+            .sb{
+                width: 100px;
+                height: 40px;
+                border-radius: 6px;
+                background-color:rgba(61, 109, 89, 0.678); 
+                position: relative;
+                top: 30px;
+            }
+            .d4{
+                position: relative;
+                left: 400px;
+                bottom: 940px;
+            }
+            .wallpaper{
+                position: relative;
+                height: 370px;
+                width: 170px;
+                right: 210px;
+                bottom: 20px;
+                z-index: -1;
+                border-radius: 15px;
+            }
+            .phone{
+                left: 1280px;
+                bottom: 1215px;
+                position: relative;
+            }
+            .iphone{
+                width: 250px;
+                height: 400px;
+
+            }
+            .gr{
+                background-image: url('bg.jpg');
+                height: 350px;
+                background-position: -300px -350px;
+                position: relative;
+                bottom: 720px;
+                border-radius: 30px;
+                background-color: rgb(11, 102, 19);
+                background-blend-mode: screen;
+                z-index: -1;
+                
+            }
+            .buttons{
+                position: relative;
+                bottom: 980px;
+                left: 80px;
+            }
+            .appstore{
+                position: relative;
+                left: 20px;
+            }
+            .t{
+                font-size: 25px;
+                font-family: 'Franklin Gothic Medium'
+            }
+            .img{
+                width: 50px;
+                height: 50px;
+                position: relative;
+                top: 110px;
+                left: 70px;
+                border-width: 1px;
+                border-style: solid;
+                border-color: rgb(9, 255, 0);
+                box-shadow: 1px 1px 10px rgb(9, 255, 0) ;
+               
+
+            }
+            .c1,.c2,.c3,.c4,.c5{
+                height: 300px;
+                width: 200px;
+                border-width: 2px;
+                border-style: solid;
+                border-color: rgb(9, 255, 0);
+                display: inline-flex;
+                padding: 5px 5px 2px;
+                margin: 20px;
+                border-radius: 20px;
+            }
+            .c1:hover,.c2:hover,.c3:hover,.c4:hover,.c5:hover,.c6:hover{
+                box-shadow: 5px 5px 5px;
+            }
+            .c6{
+                height: 350px;
+                width: 250px;
+                border-width: 2px;
+                border-style: solid;
+                border-color: rgb(9, 255, 0);
+                border-radius: 20px;
+                position: relative;
+                left: 1300px;
+                bottom: 350px;
+                background-color: rgb(9, 255, 0);
+
+            }
+            .car{
+                width: 350px;
+                height: 300px;
+                right: 45px;
+                position: relative;
+                
+            }
+            .p{
+                position: relative;
+                top: 170px;
+                left: 10px;
+                width: 50%;
+                height: auto;
+
+
+            }
+            .tcar{
+                font-size: 30px;
+                color: white;
+                font-family: 'Franklin Gothic Medium';
+                position:relative;
+                left: 10px;
+                bottom: 80px;
+
+            }
+            .hp{
+                text-align: justify;
+                text-justify: inter-word;
+                font-family: 'Franklin Gothic Medium';
+                text-align: center;
+                position: relative;
+                bottom: 200px;
+            }
+            .h3{
+                font-family: 'Franklin Gothic Medium';
+                text-align: center;
+                position: relative;
+                bottom: 200px;
+            }
+            .center{
+                position: relative;
+                bottom: 200px;
+            }
+            .h33{
+                font-family: 'Franklin Gothic Medium';
+                text-align: center;
+                position: relative;
+            }
+            .bottom{
+                position: relative;
+                bottom: 1200px;
+            }
+            .ftr{
+                position: relative;
+                left: 600px;
+            }
+            .ico{
+                width: 50px;
+                height: 50px;
+            }
+            .fut,.fut2{
+                list-style-type: none;
+                display: flex;
+
+            }
+            .footer{
+                background-color: rgb(36, 36, 36);
+                position: relative;
+                bottom: 1100px;
+            }
+            .copy{
+                background-color: rgb(77, 77, 77);
+                position: relative;
+                top: -1120px;
+                height: 40px;
+                color: white;
+                text-align: center;
+            }
+            .lis{
+                color: white;
+            }
+            label,input{
+                display: flex;
+            }
+            .password1,.password2{
+                position: relative;
+                left: 200px;
+                padding: 10px;
+            }
+            .pas{
+                position: relative;
+                bottom: 68px;
+            }
+            .first{
+                position: relative;
+                top: 50px;
+            }
+            .card {
+                width: 300px;
+                margin: 0 auto;
+                padding: 20px;
+                border-radius: 30px;
+                background-color: #fff;
+                z-index: 2;
+                }
+
+            .signup {
+                text-align: center;
+                margin-bottom: -5px;
+                }
+
+            .form-group {
+                margin-bottom: 15px;
+                }
+
+            label {
+                display: block;
+                margin-bottom: 5px;
+                }
+
+            input[type="text"],
+            input[type="email"],
+            input[type="password"] {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                margin-bottom: -10px;
+                }
+
+            .submitbtn {
+                width: 100%;
+                padding: 10px;
+                background-color: #4CAF50;
+                border: none;
+                color: #fff;
+                font-size: 16px;
+                border-radius: 5px;
+                cursor: pointer;
+                }
+
+            .submitbtn:hover {
+                background-color: #45a049;
+                }
+
+                .card{
+                    position: relative;
+                    top: -3480px;
+                    left: 400px;
+                    height: 340px;
+                }
+                .blur{
+                    width: 360px;
+                    margin: 0 auto;
+                    padding: 20px;
+                    border: 1px solid #ccc;
+                    border-radius: 30px;
+                    background-color: #fff;
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                    position: relative;
+                    top: -3870px;
+                    left: 400px;
+                    height: 360px;
+                    filter: blur(8px);
+                    z-index: 1;
+                }
+        </style>
+    </head>
+    <body>
+
+        <div class="nav">
+            <ul type="none" class="ul">
+                <li><a class="li"href="#" >Home</a></li>
+                <li  ><a class="li"href="#" >Subscription</a></li>
+                <li  ><a class="li"href="#" >Blog</a></li>
+                <li  ><a class="li"href="#" >Locations</a></li>
+                <li  ><a class="li"href="#" >Offers</a></li>
+                <li  ><a class="li"href="adminlogin.php" >Admin</a></li>    
+            </ul>
+        </div>
+
+        <div class="image">
+        </div>
+        
+        <p style="color: white;font-size:60px;position: relative;bottom: 300px;left: 50px;font-family:'Franklin Gothic Medium';" > Self Drive Car Rental-CPTC</p>
+        <p style="color: white;bottom: 350px;position: relative;left: 50px;font-family:'Franklin Gothic Medium;">Choose Your Favourite Car & Enjoy Your Drive!</p>
+           
+        <div class="para">
+            <h3 class="h3">Know more about our subscriptions</h3>
+            <p class="hp">Discover the convenience and benefits of car subscription with IndusGo. Our customer-friendly system ensures a seamless experience for your favorite pick. Enjoy zero down payment, free insurance, and complimentary maintenance and service. With the freedom to return or extend your subscription anytime, IndusGo guarantees your happiness on the road. Choose IndusGo and experience the joy of hassle-free car subscription today.
+
+            </p>
+        </div>
+        
+
+
+
+            <div class="center">
+                <div class="c1">
+                    <img class="img" src="atm.png">
+                    <p class="p" >No Downpayments</p>
+                </div>
+                <div class="c2">
+                    <img class="img" src="insurance.png">
+                    <p class="p">Free insurance</p>
+                </div>
+                <div class="c3">
+                    <img class="img" src="servicing.png">
+                    <p class="p">Free Servicing</p>
+                </div>
+                <div class="c4">
+                    <img class="img" src="hidden.png">
+                    <p class="p">Zero Hidden Charges</p>
+                </div>
+                <div class="c5">
+                    <img class="img" src="limits.png">
+                    <p class="p">No Limits</p>
+                </div>
+                <div class="c6">
+                    <img class="car" src="car.png">
+                    <p class="tcar">Subscribe A Car Now</p>
+                </div>
+            </div>
+
+        <hr class="line">
+        <div class="qnmrk">
+            <img src="Capture.PNG">
+        </div>
+        
+        <div class="d4">
+            <div class="d1">
+                <p>what is indus go service ?</p>
+            </div>
+            <div class="d2">
+                <p>what all xar or vehicle options indusGo offer?</p>
+            </div>
+            <div class="d3">
+                <p>how is indusgo self rental car driving service different from other service providers</p>
+            </div>
+            <button class="sb" name="sb" onclick=""value="VIEW ALL">VIEW ALL</button>
+        </div>
+        
+        <div class="gr">
+        </div>
+
+        <div class="buttons">
+            <p class="t">download indusgo Mobile App on your mobile phone ! </p>
+            <button class="android" name="android" onclick="location.href = 'https://play.google.com/store/apps/details?id=com.indus.indusgo&hl=en_IN&gl=US';"><img width="150px"    src="android.png"> </button>
+            <button class="appstore" name="appstore" onclick="location.href='https://apps.apple.com/in/app/indusgo/id6443622487'"><img width="150px"src="appstore.png"> </button>
+        </div>
+        
+        <div class="phone">
+            <img class="iphone" src="iphone.png">
+            <img class="wallpaper" src="ph.png">
+        </div>
+            <div class="bottom">
+                <h3 class="h33">Featured In</h3>
+            <div class="ftr">
+               <a href="#"><img src="auto.png"></a> 
+               <a href="#"><img src="asianet.jpg"></a>
+               <a href="#"><img src="Mathrubhumi.png"></a>
+               <a href="#"><img src="inc42.png"></a>
+            </div>
+        </div>
+        <div class="footer">
+            <h4 style="position: relative;">Cities</h4>
+                <ul class="fut">
+                        <li><img class="ico" src="carICO.png"></td>
+                        <li class="lis">Self drive cars in <span style="color:rgb(0, 255, 13)">Kerala</span></td>
+                        <li><img class="ico" src="carICO.png"></td>
+                        <li class="lis">Self drive cars in <span style="color:rgb(0, 255, 13)"> Hyderabad</span></td>
+                        <li><img class="ico" src="carICO.png"></td>
+                        <li class="lis">Self drive cars in <span style="color:rgb(0, 255, 13)"> Tamilnadu</span></td>
+                        <li><img class="ico" src="carICO.png"></td>
+                        <li class="lis">Self drive cars in <span style="color:rgb(0, 255, 13)"> Cochin</span></td>
+                        <li><img class="ico" src="carICO.png"></td>
+                        <li class="lis">Self drive cars in <span style="color:rgb(0, 255, 13)">Cochin International Airport</span></td>
+                        <li><img class="ico" src="carICO.png"></td>
+                        <li class="lis">Self drive cars in <span style="color:rgb(0, 255, 13)"> Calicut</span></td>
+                </ul>
+                <ul class="fut2">
+                        <li><img class="ico" src="carICO.png"></td>
+                        <li class="lis" >Self drive cars in <span style="color:rgb(0, 255, 13)"> calicut International Airport</span></td>
+                        <li><img class="ico" src="carICO.png"></td>
+                        <li class="lis">Self drive cars in <span style="color:rgb(0, 255, 13)"> Trivandrum</span></td>
+                        <li><img class="ico" src="carICO.png"></td>
+                        <li class="lis">Self drive cars in <span style="color:rgb(0, 255, 13)">  Trivandrum International Airport</span></td>
+                        <li><img class="ico" src="carICO.png"></td>
+                        <li class="lis">Self drive cars in <span style="color:rgb(0, 255, 13)"> Chennai</span></td>
+                        <li><img class="ico" src="carICO.png"></td>
+                        <li class="lis">Self drive cars in <span style="color:rgb(0, 255, 13)"> Chennai Airport</span></td>
+                </ul>
+            <hr class="futline">
+        </div>
+        <div class="copy">
+            <p style="position: relative;top:8px;">&copy;Indus Go All Rights Reserved.</p>
+        </div>
+        <div class="card">
+            <h3 class="signup">SIGN UP</h3>
+            <form action="signup.php" method="post">
+              <div class="form-group">
+                <label for="uname">USER NAME:</label>
+                <input type="text" id="uname" name="uname" class="uname" placeholder="Username">
+              </div>
+              <div class="form-group">
+                <label for="email">EMAIL:</label>
+                <input type="email" id="email" name="email" class="email" placeholder="example@gmail.com">
+              </div>
+              <div class="form-group">
+                <label for="pass1">PASSWORD:</label>
+                <input type="password" id="pass1" class="pass1" name="pass1" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <label for="pass2">CONFIRM PASSWORD:</label>
+                <input type="password" id="pass2" class="pass2" name="pass2" placeholder="Confirm Password">
+              </div>
+              <div class="form-group">
+                <input type="submit" class="submitbtn" name="submit" value="Submit">
+                <a style="font-size: 10px;margin-left: 80px;position: relative;top: 5px;" href="login.html">Already Have An account ? Login</a>
+              </div>
+            </form>
+          </div>
+          <div class="blur">
+          </div>
+    </body>
+</html>
